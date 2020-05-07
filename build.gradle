@@ -1,0 +1,28 @@
+plugins {
+	id 'org.springframework.boot' version '2.2.1.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.8.RELEASE'
+	id 'java'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'com.microsoft.azure:azure-servicebus-jms-spring-boot-starter:2.1.7'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	
+	compile ("com.microsoft.azure:azure-servicebus:3.1.2")
+	{
+		exclude group: 'org.slf4j'
+		exclude group: 'org.bouncycastle'
+	}
+}
+
+test {
+	useJUnitPlatform()
+}

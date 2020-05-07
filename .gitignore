@@ -1,0 +1,32 @@
+mb.pid
+*.class
+
+# Package Files #
+*.war
+*.ear
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+/build/
+/bin/
+/.idea
+*.iml
+.gradle/
+*.ipr
+*.iws
+*.ids
+/out
+.classpath
+.project
+.settings/
+/gradle/build/
+/gradle/node_modules/
+*.log
+*.log.gz
+pricecube_requests.json
+pull_mb.json
+push_mb.json
+*.DS_STORE
+/docker/**/*.jar
+/target/
+/classes/
